@@ -18,7 +18,17 @@
     <button type="submit">Calculate</button>
   </form>
   <div id="result"></div>
+  <div style="height: 410px;"></div>
+  <center>
+    <footer>
+      &copy; <span id="copyrightYear"></span> Aryan Singla
+    </footer>
+  </center>
 
   <script src="script.js"></script>
+  <script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById("copyrightYear").textContent = currentYear;
+  </script>
 </body>
 </html>
